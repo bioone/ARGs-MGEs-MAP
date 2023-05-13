@@ -1,14 +1,13 @@
 ARGs-MGEs-MAP manual
 ==========================================
 
-This is a modified version of [Ublastx_stageone-2.3](https://github.com/biofuture/Ublastx_stageone) .We recommand users try the singualrity version of the pipeline, and you will not need to install many tricky dependence. If you want to use the previouse version, please refer to https://github.com/biofuture/Ublastx_stageone/releases/tag/2.3
+This is a modified version of [Ublastx_stageone-2.3](https://github.com/biofuture/Ublastx_stageone) .
 
 If you  have any questions or suggestions on the singularity version of this tool, please leave us a message in the Issues. 
 
-The change log of this version (2021-01-05) includes:
-1. Merge two steps into one command for easy of useage
-2. Add paralell computing for the blastx step searching against SARG2 database, this accelerats the whole process
-3. PcoA plot generated directly
+The change log of this version includes:
+1. MGE analysis pipeline
+2. Updates to the ARG database
 
 Prepare the meta-data file of your samples  
 ==========================================
