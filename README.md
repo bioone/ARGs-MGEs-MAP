@@ -152,12 +152,6 @@ SampleID | Name | Category | ReadLength |#ofreads | #of16S| **#ofCell**
  2       | SWHAS104 | SWH | 100|200000 | 9.7 |    4.1
 
 
-----------------------------------------------------------------------------------------------------------------
-For online version, please refer to http://smile.hku.hk/SARGs
-------------------------------------------------------------------------------------------------------------------------  
-**Notice:**
-
-This tools only provide the required scripts for ARGs-OAP1.0/2.0 pipeline
 
 This pipeline is distributed in the hope to achieve the aim of management of antibiotic resistant genes in envrionment, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.This pipeline is only allowed to be used for non-commercial and academic purpose.
 
