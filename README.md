@@ -1,4 +1,4 @@
-ARGs_OAP singularity version of manual
+ARGs-MGEs-MAP manual
 ==========================================
 
 We recommand users try the singualrity version of the pipeline, and you will not need to install many tricky dependence. If you want to use the previouse version, please refer to https://github.com/biofuture/Ublastx_stageone/releases/tag/2.3
