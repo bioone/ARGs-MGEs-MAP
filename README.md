@@ -9,6 +9,23 @@ The change log of this version includes:
 1. MGE analysis pipeline
 2. Updates to the ARG database
 
+Prepare compulsory command
+============================
+1. bbmap
+a. download packages from here (https://sourceforge.net/projects/bbmap/)
+b. install bbmap
+c. copy the whole folder "bbmap" into the subfoler "bin" under "ARGs-MGEs-MAP"
+
+2. samtools
+a. download packages from here (http://www.htslib.org/download/)
+b. install samtools
+c. copy executable "samtools" into the subfoler "bin" under "ARGs-MGEs-MAP"
+
+3. mimimap2
+a. download packages from here (https://github.com/lh3/minimap2)
+b. install minimap2
+c. copy executable "mimimap2" into the subfoler "bin" under "ARGs-MGEs-MAP"
+
 Prepare the meta-data file of your samples  
 ==========================================
 To run the pipeline, users need to prepare relative meta-data.txt file and put all the pair-end fastq file into one directory  
@@ -26,12 +43,23 @@ SampleID | Name | Category | ReadLength
  1       | STAS | ST       | 100   
  2       | SWHAS104 | SWH  | 100   
 
-Run the following command to exec the pipeline
-==================================
 
- 
+Stage one
+==================
+Put all your fastq files into one directory in your local system (notice the name of your fastq files should be Name_1.fq and Name_2.fq). your can give -h to show the help information. Examples could be found in source directory example, in example directory run test:   
 
-The **meta_data_online.txt** includes some intemediate numbers information such as #ofreads, #of16S, #ofCells, etc. All the tables are in the files with prefix: stage2output.
+```
+nohup ./argoap_pipeline_stageone_version2.3 -i inputfqs -o testoutdir -m meta-data.txt -n 8
+
+./argoap_pipeline_stageone_version2.3  -h
+
+nohup ./mobile_pipeline_stageone_version2.33 -i inputfqs -o testoutdir -m meta-data.txt -n 8
+
+./mobile_pipeline_stageone_version2.3  -h
+```
+The results are in testoutdir/
+
+The **extracted.fa** and **meta_data_online.txt** are two files needed for ublastx_stage_two analysis.   
 
 The meta-data-online.txt looks like this 
 
