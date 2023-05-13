@@ -49,10 +49,12 @@ Stage one
 Put all your fastq files into one directory in your local system (notice the name of your fastq files should be Name_1.fq and Name_2.fq). your can give -h to show the help information. Examples could be found in source directory example, in example directory run test:   
 
 ```
+#ARG analysis
 nohup ./argoap_pipeline_stageone_version2.3 -i inputfqs -o testoutdir -m meta-data.txt -n 8
 
 ./argoap_pipeline_stageone_version2.3  -h
 
+#MGE analysis
 nohup ./mobile_pipeline_stageone_version2.33 -i inputfqs -o testoutdir -m meta-data.txt -n 8
 
 ./mobile_pipeline_stageone_version2.3  -h
@@ -68,7 +70,16 @@ SampleID | Name | Category | ReadLength |#ofreads | #of16S| **#ofCell**
  1       | STAS | ST  | 100| 200000 | 10.1  |   4.9
  2       | SWHAS104 | SWH | 100|200000 | 9.7 |    4.1
 
+Stage two
+========================================================
+Normally, just run
+```
+# ARG analysis
+nohup perl argoap_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online.txt -o testout -l 25 -d 80 -e 1e-5
 
+#MGE analysis
+nohup perl mobile_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online.txt -o testout -l 25 -d 80 -e 1e-5
+```
 
 This pipeline is distributed in the hope to achieve the aim of management of antibiotic resistant genes in envrionment, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.This pipeline is only allowed to be used for non-commercial and academic purpose.
 
