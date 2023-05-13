@@ -3,7 +3,7 @@ ARGs-MGEs-MAP manual
 
 This is a modified version of [Ublastx_stageone-2.3](https://github.com/biofuture/Ublastx_stageone) .
 
-If you  have any questions or suggestions on the singularity version of this tool, please leave us a message in the Issues. 
+If you  have any questions or suggestions of this tool, please leave us a message in the Issues. 
 
 The change log of this version includes:
 1. MGE analysis pipeline
