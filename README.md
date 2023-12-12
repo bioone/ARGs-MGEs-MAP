@@ -1,7 +1,9 @@
 ARGs-MGEs-MAP manual
 ==========================================
 
-This is a modified version of [Ublastx_stageone-2.3](https://github.com/biofuture/Ublastx_stageone) .
+This is a modified version of [Ublastx_stageone-2.3](https://github.com/biofuture/Ublastx_stageone) . We upgraded the antibiotic resistance gene (ARG) database, thereby enhancing the detection capability of ARGs. Additionally, we incorporated the detection capability for mobile genetic elements (MGEs).
+The mobile genetic elements (MGEs) database is sourced from [mobileOG-db](https://github.com/clb21565/mobileOG-db).
+
 
 If you  have any questions or suggestions of this tool, please leave us a message in the Issues. 
 
