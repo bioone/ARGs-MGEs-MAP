@@ -84,6 +84,23 @@ nohup perl argoap_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online
 nohup perl mobile_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online.txt -o testout -l 25 -d 80 -e 1e-7
 ```
 
+Adjustment parameters
+========================================================
+If you have your own requirements for the analysis results，you can adjust the following parameters in the second step of analysis.
+```
+#Custom parameters
+-l length filtering default 25 aa 
+-e evalue filtering default 1e-7
+-d identity filtering default 80
+
+
+# ARG analysis
+nohup perl argoap_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online.txt -o testout -l 25 -d 80 -e 1e-7
+
+#MGE analysis
+nohup perl mobile_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online.txt -o testout -l 25 -d 80 -e 1e-7
+```
+
 This pipeline is distributed in the hope to achieve the aim of management of antibiotic resistant genes in envrionment, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.This pipeline is only allowed to be used for non-commercial and academic purpose.
 
 **The SARG database is distributed only freely used for academic prupose, any commercial use should require the agreement from the developer team.** 
