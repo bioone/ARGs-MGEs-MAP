@@ -95,10 +95,12 @@ If you have your own requirements for the analysis results，you can adjust the 
 
 
 # ARG analysis
-nohup perl argoap_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online.txt -o testout -l 25 -d 80 -e 1e-7
+perl argoap_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online.txt -o testout -l 25 -d 80 -e 1e-7
+perl argoap_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online.txt -o testout -l 50 -d 80 -e 1e-8
 
 #MGE analysis
-nohup perl mobile_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online.txt -o testout -l 25 -d 80 -e 1e-7
+perl mobile_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online.txt -o testout -l 25 -d 80 -e 1e-7
+perl mobile_pipeline_stagetwo_version2 -i extracted.fa -m meta_data_online.txt -o testout -l 50 -d 80 -e 1e-8
 ```
 
 This pipeline is distributed in the hope to achieve the aim of management of antibiotic resistant genes in envrionment, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.This pipeline is only allowed to be used for non-commercial and academic purpose.
