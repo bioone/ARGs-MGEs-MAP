@@ -68,7 +68,7 @@ my $date = localtime;
 open(LOG, ">$logF") || die "Can not create Log.txt\n";
 print LOG "Start Ublastx one : $date\n";
 #$opt_c
-my $ARDB_PATH ||= "$ublastxdir/DB/SARG.2.2.diamondv0.9.24.dmnd"; ##change to the new one
+my $ARDB_PATH ||= "$ublastxdir/DB/SARG_plus.dmnd"; ##change to the new one
 my $opt_d ||= $ARDB_PATH; ## This option is to replace the version of database, such as new and old SARG database, or other heirachical database with similar format 
 my $ggnr85 ||= "$ublastxdir/DB/gg85_yinxiaole.fasta.mmi";
 
