@@ -47,9 +47,9 @@ if($opt_h  ||  (!$opt_i) ){
 }
 my $efa = $opt_i;
 my $blast6out = "$opt_o.blast6out.txt";
-my $ARDB_PATH = "$ublastxdir/DB/SARG.2.2.fasta";
+my $ARDB_PATH = "$ublastxdir/DB/SARG_plus.fasta";
 my $ARDB_STRUCTURE = "$ublastxdir/DB/structure_20181107.LIST";
-my $ARDBFA = "$ublastxdir/DB/SARG.2.2.fasta";
+my $ARDBFA = "$ublastxdir/DB/SARG_plus.fasta";
 $opt_n ||= 4;
 $opt_l ||= 25;
 $opt_e ||= 1e-7;
